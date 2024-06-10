@@ -1,0 +1,381 @@
+html {
+    background-color: rgb(230, 209, 223);
+    overflow-x: hidden;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #744985;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+/* loader end */
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    backdrop-filter: blur(180px);
+    top: 0;
+    z-index: 1;
+}
+
+.nav-logo img {
+    height: 10vh;
+}
+
+.nav-but a {
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.navside {
+    display: none;
+}
+
+.small-screen {
+    display: none;
+}
+
+/* adds CSS */
+.contaner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.font-text {
+    color: white;
+
+}
+
+.font-black {
+    color: black;
+
+}
+
+.first-con {
+    margin-top: 40px;
+    background-color: #f46d75;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 7px black;
+}
+
+.fc-right img {
+    height: 400px;
+}
+
+/* secound page  */
+.Secound-con {
+    margin-top: 40px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.sc-left {
+    padding: 0px 40px;
+    border-radius: 20px;
+    margin: 130px 0px;
+}
+
+.sc-right img {
+    mix-blend-mode: screen;
+    height: 60%;
+    margin: 15% 0%;
+}
+
+/* search image */
+.search {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.sear {
+    position: absolute;
+    margin-top: 150px;
+}
+
+.sear input {
+    padding: 10px 150px 10px 30px;
+    border-radius: 50px;
+    border: 0px;
+    box-shadow: 1px 1.5px 10px;
+}
+
+.sear input::placeholder {
+    font-size: 1rem;
+    color: black;
+}
+
+.alin {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+/* video */
+
+.holder video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.holder {
+    background-color: black;
+}
+
+/* Pruchse section  */
+
+.slid-page {
+    background-color: black;
+    display: flex;
+    overflow-x: auto;
+}
+
+.slid-page::-webkit-scrollbar {
+    display: none;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    min-width: 230px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.top img {
+    height: 150px;
+}
+
+.botm {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Chocolate section */
+.pic {
+    position: relative;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.pic button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: #783f00;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    color: rgb(237, 231, 231);
+    transition: 1.5s ease-out;
+}
+
+.pic button:hover {
+    -size: 1rem;
+    color: white;
+    background-color: #411900;
+}
+
+/* End */
+.end-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    align-items: center;
+}
+
+.right-end p {
+    font-size: 0.8rem;
+    margin-right: 30px;
+}
+
+
+/* CSS */
+
+.pbay {
+    width: 100px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px black;
+    padding: 10px;
+    background-color: #17759C;
+    color: white;
+    border: 0px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.pbay:hover {
+    background-color: #fff;
+    color: #17759C;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.pbay:active {
+    box-shadow: 0px 0px 0px;
+    transition: 0.1s;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-but a {
+        font-size: 1rem;
+    }
+
+    .font-text {
+        font-size: 0.7rem;
+    }
+
+    .first-con {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .fc-right img {
+        height: 180px;
+    }
+
+    /* secound  */
+    .Secound-con {
+        width: 100%;
+    }
+
+    .sc-left {
+        width: 150px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sc-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .sc-right img {
+        height: 130px;
+    }
+
+    .fl {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .navside {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.714);
+        position: absolute;
+        width: 60%;
+        display: flex;
+        top: 0;
+        right: -400px;
+        height: 100vh;
+        flex-direction: column;
+        padding: 120px 20px;
+        transition: 0.8s ease-out;
+        z-index: 3;
+    }
+
+    .navside a {
+        width: 60%;
+        margin: 1px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.772);
+        text-decoration: none;
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+    }
+
+    .nav-bar .nav-but {
+        display: none;
+    }
+
+    .close {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-bottom: 50px;
+        font-size: 1.3rem;
+    }
+
+    .small-screen {
+        display: block;
+        margin: 0px 20px;
+    }
+}
